@@ -1,0 +1,68 @@
+.saiba-mais-btn{
+    border-bottom: 2px solid #700000;
+    width: 85px;
+}
+
+.menu-mobile {
+    position: fixed;
+    bottom: 0;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-top: 2px solid #700000;
+    display: none !important;
+}
+
+.menu-mobile ul li.nav-item-centro {
+    border: 2px solid #700000;
+    border-radius: 50%;
+    bottom: 45px;
+    position: fixed;
+
+}
+
+@media (max-width: 1366px) and (max-height: 768px) {
+    .efeito {
+        height: 120px;
+    }
+    .efeito .triangulo-d,
+    .efeito .triangulo-e {
+        height: 120px;
+    }
+}
+
+@media (max-width:600px) {
+    .menu-mobile {
+        display: flex !important;
+        z-index: 99999;
+    }
+
+    .menu-desk {
+        display: none !important;
+    }
+
+    footer {
+        margin-bottom: 150px;
+    }
+
+    footer p {
+        font-size: 12px;
+      }
+}
+
+@media (max-width:400px) {
+    
+    .menu-mobile .nav-item img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .menu-mobile .nav-item-centro img {
+        width: 50px;
+        height: 50px;
+    }
+
+    footer {
+        margin-bottom: 100px;
+    }
+    
+}

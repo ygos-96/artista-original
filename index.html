@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tuzinho - Original SP Tattoo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/arq/css/basico/reset.css">
+    <link rel="stylesheet" href="src/arq/css/basico/global.css">
+    <link rel="stylesheet" href="src/arq/css/basico/buid.css">
+    <link rel="stylesheet" href="src/arq/css/container/carrossel.css">
+    <link rel="stylesheet" href="src/arq/css/artista.css">
+    <style>
+        .principal {
+            height: 100vh;
+            min-height: 100%;
+        }
+
+        .principal img {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .info-artista {
+            width: 500px;
+            margin-inline: 20px;
+            position: absolute;
+        }
+
+        .efeito {
+            height: 180px;
+            width: 100%;
+            bottom: -2px;
+            right: 0;
+            left: 0;
+        }
+
+        .efeito .triangulo-d,
+        .efeito .triangulo-e {
+            height: 180px;
+            width: 50vw;
+            background-color: #0D0000;
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        }
+
+    
+
+        @media (max-width: 970px) {
+            .efeito {
+                height: 150px;
+            }
+
+            .efeito .triangulo-d,
+            .efeito .triangulo-e {
+                height: 150px;
+            }
+        }
+
+        @media (max-width:770px) {
+            .principal h1 {
+                font-size: 18px;
+                margin-bottom: 20px !important;
+            }
+
+            .principal img {
+                object-position: top;
+            }
+        }
+
+        @media (max-width:600px) {
+            .principal h1 {
+                font-size: 25px;
+
+            }
+
+            .principal img {
+                object-position: center;
+            }
+
+            .efeito {
+                height: 70px;
+
+            }
+
+            .efeito .triangulo-d,
+            .efeito .triangulo-e {
+                height: 70px;
+
+            }
+        }
+
+        @media (max-width:400px) {
+            .principal h1 {
+                font-size: 22px;
+
+            }
+
+        }
+    </style>
+</head>
+
+<body class="text-light">
+    <header>
+        <section class="principal d-flex flex-column justify-content-center position-relative">
+            <picture>
+                <!-- Para telas menores que 768px -->
+                <source srcset="src/img/LP-artistas/artistas/tuzinho/tuzinho-mob.png" media="(max-width: 768px)">
+                <img src="src/img/LP-artistas/artistas/tuzinho/tuzinho.png" width="500" height="200" alt="Tuzinho">
+            </picture>
+
+            <div class="info-artista d-flex flex-column justify-content-center align-items-center text-center">
+                <h1 class="fonte-titulo text-white fs-45">Olá, eu sou o </h1>
+                <h2 class="fonte-artista">Tuzinho</h2>
+                <h3 class="fonte-titulo mb-5">tatuador a <span style="color: var(--btn-cor-texto-artista);">30
+                        anos</span></h3>
+                <button class="btn-artista">Solicitar orçamento</button>
+            </div>
+
+            <div class="img-logo position-absolute">
+                <img src="src/img/icones/logo-original/Logo-branco.webp" alt="">
+            </div>
+            <div class="efeito d-flex justify-content-center position-absolute">
+                <div class="triangulo-d">
+                </div>
+                <div class="triangulo-e">
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="artista mt-sessao container d-flex justify-content-center align-items-center">
+            <div class="d-flex flex-column justify-content-center align-items-center text-center col-4">
+                <h2 class="titulo-artista mb-4">Tatuador profissional e renomado </h2>
+                <img src="src/img/LP-artistas/perfil/tuzinho-perfil.png" width="505" height="708" img-fluid"
+                    alt="Foto de perfil do Tuzinho">
+            </div>
+
+            <div class="col-8">
+                <h2 class="titulo-artista mb-4">Tatuador profissional e renomado </h2>
+                <p class="fonte-principal my-4">À frente do estúdio está Tuzinho Tattoo, um dos tatuadores mais
+                    renomados do país. Com mais de 30 anos de experiência, Tuzinho se especializou no realismo e em
+                    técnicas avançadas de tatuagem, sendo reconhecido por seu talento e precisão. Sua trajetória inclui
+                    a conquista de inúmeros prêmios em convenções ao redor do mundo, além de ter formado milhares de
+                    tatuadores através da Tuzinho Academy, sua plataforma de ensino dedicada ao aprimoramento da arte da
+                    tatuagem</p>
+                <h3 class="fonte-artista fs-70 ">Tuzinho</h3>
+                <button class="btn-artista">Solicitar orçamento</button>
+            </div>
+        </section>
+        <section class="d-flex flex-column justify-content-center align-items-center mt-sessao mb-sessao">
+            <div class="header-sessao d-flex flex-column justify-content-center aling-items-center mb-5">
+                <span class="fonte-titulo fs-16 text-center">minhas</span>
+                <h2 class="fonte-artista fs-50">Especialidades</h2>
+            </div>
+            <div class="habilidades justify-content-center align-items-center">
+                <div class="card-skill d-flex flex-column justify-content-center align-items-center">
+                    <div class="d-flex flex-column justify-content-center align-items-center pt-4 card-skills-top">
+                        <img src="src/img/icones/especialidades/realismo-colorido.png" class="mb-2" width="60"
+                            height="60" alt="icone de realismo colorido">
+                        <h2 class="fonte-titulo text-light fs-15">Realismo colorido</h2>
+                    </div>
+                    <div class="m-auto d-flex flex-column justify-content-center align-items-center">
+                        <p class="fonte-principal text-light fs-12 text-center px-3">A tatuagem realista colorida é uma
+                            técnica que busca reproduzir imagens com alto nível de detalhe e profundidade, utilizando
+                            cores
+                            vibrantes para criar um efeito tridimensional e realista na pele.</p>
+                    </div>
+                </div>
+                <div class="card-skill d-flex flex-column justify-content-center align-items-center">
+                    <div class="d-flex flex-column justify-content-center align-items-center pt-4 card-skills-top">
+                        <img src="src/img/icones/especialidades/realismo-preto-e-cinza.png" class="mb-2" width="60"
+                            height="60" alt="icone de realismo colorido">
+                        <h2 class="fonte-titulo text-light fs-15">realismo preto e cinza</h2>
+                    </div>
+                    <div class="m-auto d-flex flex-column justify-content-center align-items-center">
+                        <p class="fonte-principal text-light fs-12 text-center px-3">A tatuagem de realismo preto e
+                            cinza
+                            utiliza apenas tons de preto e cinza para criar profundidade, contraste e sombreamento,
+                            resultando em imagens detalhadas e realistas com um efeito tridimensional.</p>
+                    </div>
+                </div>
+                <div class="card-skill d-flex flex-column justify-content-center align-items-center">
+                    <div class="d-flex flex-column justify-content-center align-items-center pt-4 card-skills-top">
+                    <img src="src/img/icones/especialidades/realismo.png" class="mb-2" width="60" height="60"
+                        alt="icone de realismo colorido">
+                    <h2 class="fonte-titulo text-light fs-15">realismo</h2>
+                </div>
+                <div class="m-auto d-flex flex-column justify-content-center align-items-center">
+                    <p class="fonte-principal text-light fs-12 text-center px-3">A tatuagem de realismo é um estilo que
+                        busca reproduzir imagens com alta fidelidade à realidade, utilizando sombreamento, contraste e
+                        profundidade para criar um efeito tridimensional na pele.</p>
+                </div>
+            </div>
+
+
+        </section>
+        <section class="galeria d-flex flex-column justify-content-center align-items-center">
+            <div class="header-sessao d-flex flex-column justify-content-center aling-items-center mb-5">
+                <span class="fonte-titulo fs-16 text-center">meus</span>
+                <h2 class="fonte-artista fs-50 text-center">Trabalhos</h2>
+                <p class="fonte-principal fs-22 text-center my-2">Cada traço, cada sombra, cada detalhe. Descubra as
+                    últimas criações de Tuzinho Tattoo e veja por que seu trabalho é referência no realismo.</p>
+            </div>
+            <div class="container-fluid">
+                <div class="carousel mx-auto">
+                    <div class="list">
+                        <img class="item " src="src/img/LP-artistas/carrossel/carrossel-tuzinho/1.webp" width="400"
+                            height="500">
+                        <img class="item" src="src/img/LP-artistas/carrossel/carrossel-tuzinho/2.webp" width="400"
+                            height="500">
+                        <img class="item " src="src/img/LP-artistas/carrossel/carrossel-tuzinho/3.webp" width="400"
+                            height="500">
+                        <img class="item " src="src/img/LP-artistas/carrossel/carrossel-tuzinho/4.webp" width="400"
+                            height="500">
+                        <img class="item " src="src/img/LP-artistas/carrossel/carrossel-tuzinho/6.webp" width="400"
+                            height="500">
+                        <img class="item" src="src/img/LP-artistas/carrossel/carrossel-tuzinho/7.webp" width="400"
+                            height="500">
+
+                    </div>
+
+                    <!--next prev button-->
+                    <div class="arrows">
+                        <button class="prev">
+                            < </button>
+                                <button class="next">></button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="contato container d-flex flex-column mt-sessao mb-sessao">
+            <span class="marcacao mb-2">.</span>
+            <h2 class="ml-2 titulo-de-sessao fonte-principal mb-1">Pronto para dar vida à sua ideia?</h2>
+            <p class="subtitulo-de-sessao ml-2">Contato</p>
+            <div class="container d-flex flex-column justify-content-center align-items-center my-5">
+                <h3 class="fonte-principal titulo-de-sessao text-center col-10">Conte-nos sobre sua ideia de tatuagem e
+                    receba um orçamento personalizado hoje mesmo.</h3>
+                <button class="btn-secundario mt-4">Solicitar orçamento</button>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="container d-flex justify-content-center aling-items-center my-5">
+        <img src="src/img/icones/logo-original/Logo-branco.webp" width="80" height="80" alt="">
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="src/arq/js/container/carrossel.js"></script>
+
+</body>
+
+</html>
